@@ -1,17 +1,35 @@
-
-
-/* -----------------  Banner ------------------- */
-.banner {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: #3e2054;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+h2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
 }
 
-.banner img {
+p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+
+
+/* =====================
+============================
+        BANNER
+========================
+=========================*/
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #3e2054;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
     position: absolute;
     top: 0;
     left: 0;
@@ -19,25 +37,25 @@
     height: 100%;
     object-fit: cover;
     opacity: 0.4;
-}
+  }
 
-.banner .content{
+  .content {
     position: relative;
     max-width: 750px;
     text-align: center;
-}
+  }
 
-.banner .content h2{
+  h2 {
     color: #fff;
     font-size: 60px;
-}
+  }
 
-.banner .content p{
+  p {
     color: #fff;
     font-size: 18px;
-}
+  }
 
-.banner header {
+  header {
     position: absolute;
     top: 0;
     left: 0;
@@ -47,129 +65,338 @@
     justify-content: space-between;
     align-items: center;
     z-index: 10000;
+
+    .logo {
+      color: #fff;
+      text-decoration: none;
+      font-size: 24px;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .toggle {
+      position: relative;
+      width: 36px;
+      height: 36px;
+      background-image: url(/assets/circulo.png);
+      background-size: cover;
+      cursor: pointer;
+    }
+  }
 }
 
-.banner header .logo {
-    color: #fff;
-    text-decoration: none;
-    font-size: 24px;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-.banner header .toggle {
-    position: relative;
-    width: 36px;
-    height: 36px;
-    background-image: url(/assets/circulo.png);
-    background-size: cover;
-    cursor: pointer;
-}
 
 
-/* ------------------------- About ---------------------------- */
-
+/* =====================
+============================
+        ABOUT
+========================
+=========================*/
 
 .about {
-    position: relative;
-    width: 100%;
-    display: flex;
-}
+  position: relative;
+  width: 100%;
+  display: flex;
 
-.about .contentBx
-{
-    background: black;
-    padding: 100px;
-    width: 50%;
-}
-
-.about .contentBx h2 {
-    color: #fff;
-    font-size: 30px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-}
-
-
-.about .contentBx p {
-    color: #fff;
-    font-size: 15px;
-    font-weight: 300;
-    letter-spacing: 1px;
-}
-
-.about .imgBx {
+  .imgBx {
     background: url(/assets/game-over.jpg);
     width: 50%;
     background-size: cover;
     background-position: center;
+  }
+
+  .contentBx {
+    background: black;
+    padding: 100px;
+    width: 50%;
+
+    // h2 {
+    //   color: #fff;
+    //   font-size: 30px;
+    //   font-weight: 600;
+    //   letter-spacing: 1px;
+    //   margin-bottom: 10px;
+    // }
+
+    // p {
+    //   color: #fff;
+    //   font-size: 15px;
+    //   font-weight: 300;
+    //   letter-spacing: 1px;
+    // }
+  }
+}
+
+
+/* =====================
+============================
+        SERVICES
+========================
+=========================*/
+
+.services {
+  background: #1e0f2e;
+  padding: 100px;
+  text-align: center;
+
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+
+    .serviceBx {
+      position: relative;
+      background: #fff;
+      width: 350px;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        max-width: 100px;
+      }
+
+      h2 {
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 1px;
+        color: #000;
+      }
+    }
+  }
+}
+
+/* =====================
+============================
+        TECHNOLOGY
+========================
+=========================*/
+
+.technology {
+  background: #5f3e76;
+  width: 100%;
+  padding: 100px;
+  padding-top: 300px;
+  margin-top: -300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .contentBx {
+    max-width: 800px;
+  }
+
+  .imgBx {
+    max-width: 250px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+
+/* =====================
+============================
+        CLIENT
+========================
+=========================*/
+
+.client {
+  background: black;
+  padding: 100px;
+  text-align: center;
+
+  .imgBx {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+
+    img {
+      max-width: 200px;
+      margin: 20px;
+      opacity: 0.25;
+      cursor: pointer;
+    }
+
+    img:hover {
+      opacity: 1;
+    }
+
+  }
+}
+
+
+/* =====================
+============================
+        TESTIMONIALS
+========================
+=========================*/
+
+.testimonials {
+  position: relative;
+  padding: 100px;
+  background: #12222d;
+  text-align: center;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+
+    .contentBx {
+      background: #fff;
+      padding: 60px 50px;
+      width: 550px;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+
+      p {
+        font-style: italic;
+        color: black;
+      }
+
+      h3 {
+        width: 100%;
+        text-align: end;
+        font-weight: 500;
+        color: rgb(79, 35, 108);
+      }
+    }
+  }
+}
+
+
+/* =====================
+============================
+        CONTACT
+========================
+=========================*/
+
+.contact {
+  padding: 100px;
+  background-color: black;
+  text-align: center;
+}
+
+.imgBx2 {
+  background: url(/assets/bg2.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+}
+
+.form .inputBx {
+  margin-bottom: 40px;
+
+  input,
+  textarea {
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: #fff;
+  }
+
+  textarea {
+    min-height: 150px;
+  }
+
+  input[type='submit']{
+    width: 150px;
+    background: #fff;
+    color: #111;
+    cursor: pointer;
+    font-weight: 400;
+  }
+
 }
 
 
 
 
-
-// ============ style de scroll
+/* =====================
+============================
+        SCROLL BAR
+========================
+=========================*/
 
 
 #scrollPath {
-    position: fixed;
-    top:0;
-    right: 0;
-   width: 10px;
-    height: 100%;
-    background: rgba(255, 255, 255,0.05);
-   z-index: 10000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  z-index: 10000;
 
 }
 
 #progressbar {
-   position: fixed;
-   top:0;
-   right: 0;
-   width: 10px;
-   height: 0%;
-   background:linear-gradient(to top,#008aff,#00ffe7);
-   animation: animate 5s linear infinite; 
-   z-index: 10000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 0%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  animation: animate 5s linear infinite;
+  z-index: 10000;
 }
 
 @keyframes animate {
-   0%,100%{
-       filter: hue-rotate(0deg);
-   }
-   50%{
-       filter: hue-rotate(360deg);   
-   }
+
+  0%,
+  100% {
+    filter: hue-rotate(0deg);
+  }
+
+  50% {
+    filter: hue-rotate(360deg);
+  }
 }
 
 
 #progressbar::before {
-   content: '';
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background:linear-gradient(to top,#008aff,#00ffe7);
-   filter: blur(10px);
-   z-index: 10000;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  filter: blur(10px);
+  z-index: 10000;
 }
 
 
 #progressbar::after {
-   content: '';
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background:linear-gradient(to top,#008aff,#00ffe7);
-   filter: blur(30px);
-   z-index: 10000;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  filter: blur(30px);
+  z-index: 10000;
 }
-
-
-

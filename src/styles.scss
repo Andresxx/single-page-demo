@@ -1,18 +1,25 @@
-// ============  Prepate all the body
+/*================
+==================
+    PREPARE PAGE
+=================
+=================*/
 
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-
 }
 
 
-// ================ style de scroll
+/*================
+==================
+    HIDE SCROLL
+=================
+=================*/
 
 ::-webkit-scrollbar {
     width: 0;
+    display: none;
+    -webkit-appearance: none;
 }
-
