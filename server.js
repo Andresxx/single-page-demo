@@ -1,16 +1,3 @@
-// import express from 'express';
-// const app = express();
-
-// app.use(express.static(`./dist/<single-page-demo>`));
-
-// app.get(`/*`, function(req, res) {
-//     res.sendFile(`index.html`, {root: `dist/<single-page-demo>/`}
-//   );
-//   });
-
-//   app.listen(process.env.PORT || 8080);
-
-
 
 //Install express server
 const express = require('express');

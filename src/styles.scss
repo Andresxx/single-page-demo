@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+// ============  Prepate all the body
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+
+// ================ style de scroll
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
